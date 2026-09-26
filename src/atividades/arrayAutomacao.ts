@@ -14,7 +14,7 @@ for (let i = 0; i < cenarios.length; i++) {
     if (cenarios[i] === "automatizar") {
         automatizaveis = automatizaveis + 1;
     } else {
-        naoAutomatizaveis = naoAutomatizaveis + 1;
+        naoAutomatizaveis += 1;
     }
 
 }

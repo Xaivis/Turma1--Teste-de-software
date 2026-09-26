@@ -4,8 +4,8 @@ const numeros = [10, 5, 8, 3, 12, 7];
 
 for (let i = 0; i < numeros.length; i++) {
 
-    if (/* COMPLETE A CONDIÇÃO */) {
-        console.log(/* COMPLETE */);
+    if (numeros[i] > 7/* COMPLETE A CONDIÇÃO */) {
+        console.log(`O número ${numeros[i]} é maior que 7`/* COMPLETE */);
     }
 
 };

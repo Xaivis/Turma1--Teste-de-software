@@ -9,6 +9,10 @@ type Produto = {
     estoque: number
 };
 
+function criarProduto(nome: string, preco: number, estoque: number){
+    return {nome, preco, estoque}
+}
+
 
 const produto = criarProduto("Teclado com led", 150, 59);
 console.log(produto);

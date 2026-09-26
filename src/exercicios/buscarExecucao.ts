@@ -1,10 +1,11 @@
 function esperar(tempo: number): Promise<void> {
-    return  Promise(function (resolve) {
+    return  new Promise(function (resolve) {
         setTimeout(resolve, tempo);
     });
 }
 
 //SUBSTITUI A FUNÇÃO (function (resolve)) POR UMA FUNÇÃO CALLBACK
+
 
 async function buscarExecucao(id: number): Promise<string> {
     await esperar(2000);

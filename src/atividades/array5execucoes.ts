@@ -9,7 +9,7 @@ const execucoes: ExecucaoTeste[] = [
     { nome: "Cadastro", passou: false, tempo: 5 },
     { nome: "Logout", passou: true, tempo: 1 },
     { nome: "Pagamento", passou: true, tempo: 8 },
-    { nome: "Busca", passou: false, tempo: 4 }
+    { nome: "Busca", passou: false, tempo: 4 },
 ];
 
 const nomes = execucoes.map(function (teste) { // Retorna o nome de cada elemento.

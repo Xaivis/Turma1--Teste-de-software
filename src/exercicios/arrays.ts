@@ -10,15 +10,16 @@ Não use chatGPT, acredite, é mais prazeroso encontrar a solução sem ajuda de
 */
 
 type alimentos = {
-    //COMPLETE AQUI
+    nome: string,
+    preco: number,
+    peso: number,
+    estoque: number//COMPLETE AQUI
 }
 
 const listaDeAlimentos: alimentos[] = [
     //COMPLETE AQUI
-    {nome: "Feijão", preco: 8.99, peso: 1, estoque: 50},
-    
+    {nome: "Feijão", preco: 8.99, peso: 1, estoque: 50},    
     {nome: "Macarrão", preco: 5.99, peso: 1, estoque: 200},
-   
     {nome: "Sal", preco: 2.99, peso: 1, estoque: 400},
 ]
 
@@ -36,12 +37,12 @@ const filtrarAlimentos = listaDeAlimentos.filter(function(alimentos) {
 });
 
 const somarPrecoAlimentos = listaDeAlimentos.reduce(function(acumulador, alimentos) {
-    return // COMPLETE AQUI
+    return alimentos.preco + acumulador// COMPLETE AQUI
 }, 0).toFixed(2);
 
 
 console.log(nomeAlimentos);
 console.log(filtrarAlimentos)
-console.log(somarPrecoAlimentos)
+console.log(`A soma dos valores dos alimentos é: R$ ${somarPrecoAlimentos}`)
 
 
