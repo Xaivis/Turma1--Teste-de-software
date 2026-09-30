@@ -13,4 +13,3 @@ function validarSenha(senha: string): boolean {
 
     return true;
 }
-
